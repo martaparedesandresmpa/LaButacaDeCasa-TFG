@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Series - La Butaca de Tu Casa</title>
+    <style>
+        /* ESTE ES TU CÓDIGO INTOCABLE */
+        * { box-sizing: border-box; }
+        body { background-color: #111418; margin: 0; font-family: 'Segoe UI', Arial, sans-serif; color: white; overflow-x: hidden; }
+        .cabecera { background-image: linear-gradient(rgba(0,0,0,0.3), #111418), url('img/Imagenes/fondo/butacas2.jpg'); background-size: cover; background-position: center; padding: 60px 20px; text-align: center; border-bottom: 2px solid #e00707; }
+        .contenedor-logo-titulo { display: flex; align-items: center; justify-content: center; gap: 20px; }
+        .logo { width: 140px; border-radius: 10px; }
+        h1 { color: #e5b869; font-size: 50px; margin: 0; text-shadow: 2px 2px 8px black; }
+        nav.menu-superior { margin-top: 30px; }
+        nav.menu-superior a { color: #d1d5db; text-decoration: none; margin: 0 15px; font-size: 18px; font-weight: bold; transition: 0.3s; }
+        nav.menu-superior a:hover { color: #e5b869; }
+        .sup-activo { color: #e5b869 !important; border-bottom: 2px solid #e5b869; padding-bottom: 5px; }
+        .contenedor-principal { display: flex; max-width: 1300px; margin: 40px auto; padding: 0 20px; gap: 40px; }
+        .menu-lateral { width: 250px; background-color: #1a1d24; padding: 25px; border-radius: 10px; border: 1px solid #2a2d34; height: fit-content; }
+        .menu-lateral h3 { color: #e5b869; border-bottom: 1px solid #e5b869; padding-bottom: 10px; margin-top: 0; }
+        .menu-lateral ul { list-style: none; padding: 0; }
+        .menu-lateral li { margin-bottom: 15px; }
+        .menu-lateral a { color: #a0a5ab; text-decoration: none; display: block; transition: 0.3s; }
+        .menu-lateral a:hover { color: white; transform: translateX(8px); }
+        .contenido-derecha { flex: 1; }
+        .seccion-contenedor { margin-bottom: 50px; }
+        .titulo-seccion { color: white; margin-bottom: 20px; font-size: 26px; border-left: 4px solid #e00707; padding-left: 15px; text-transform: uppercase; }
+        .fila-peliculas { display: flex; gap: 20px; flex-wrap: wrap; justify-content: flex-start; }
+        .pelicula-card img { width: 170px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); border: 1px solid #2a2d34; transition: 0.3s ease; }
+        .pelicula-card img:hover { transform: scale(1.1); border-color: #e00707; }
+
+        /* PIE DE PÁGINA CORREGIDO */
+        .pie-de-pagina { 
+            background-color: #0d0f12; 
+            padding: 50px 20px; 
+            text-align: center; 
+            border-top: 2px solid #e00707; 
+            margin-top: 80px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor-logo-titulo">
+            <img src="img/Imagenes/logo/logo1.jpeg" alt="Logo" class="logo">
+            <h1>LA BUTACA<br>DE TU CASA</h1>
+        </div>
+        <nav class="menu-superior">
+            <a href="index.html">Inicio</a> 
+            <a href="catalogo.html">Catálogo</a> 
+            <a href="ranking.html">Ranking</a>
+        </nav>
+    </header>
+    <div class="contenedor-principal">
+        <aside class="menu-lateral">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="series.html" style="color: white; font-weight: bold;">Series</a></li>
+            </ul>
+        </aside>
+        <main class="contenido-derecha">
+            <div class="seccion-contenedor">
+                <h2 class="titulo-seccion">Catálogo de Series</h2>
+                <div class="fila-peliculas">
+                    <div class="pelicula-card"><img src="img/Imagenes/series/bbad.jpg" alt="Breaking Bad"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/arcane.jpg" alt="Arcane"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/thelast.jpg" alt="The Last of Us"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/vikingos.jpg" alt="Vikingos"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/blackmirror.jpg" alt="Black Mirror"></div>
+                    
+                    <div class="pelicula-card"><img src="img/Imagenes/series/succesion.jpg" alt="Succession"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/onepiece.jpg" alt="One Piece"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/minesriodeltiempo.jpg" alt="Ministerio del Tiempo"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/mandalorian.jpg" alt="The Mandalorian"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/series/juegocalamar.jpg" alt="El Juego del Calamar"></div>
+
+                    <div class="pelicula-card"><img src="img/Imagenes/series/narcos.jpg" alt="Narcos"></div>
+                </div>
+            </div>
+        </main>

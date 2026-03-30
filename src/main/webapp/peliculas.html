@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Películas - La Butaca de Tu Casa</title>
+    <style>
+        /* ESTE ES TU CÓDIGO INTOCABLE */
+        * { box-sizing: border-box; }
+        body { background-color: #111418; margin: 0; font-family: 'Segoe UI', Arial, sans-serif; color: white; overflow-x: hidden; }
+        .cabecera { background-image: linear-gradient(rgba(0,0,0,0.3), #111418), url('img/Imagenes/fondo/butacas2.jpg'); background-size: cover; background-position: center; padding: 60px 20px; text-align: center; border-bottom: 2px solid #e00707; }
+        .contenedor-logo-titulo { display: flex; align-items: center; justify-content: center; gap: 20px; }
+        .logo { width: 140px; border-radius: 10px; }
+        h1 { color: #e5b869; font-size: 50px; margin: 0; text-shadow: 2px 2px 8px black; }
+        nav.menu-superior { margin-top: 30px; }
+        nav.menu-superior a { color: #d1d5db; text-decoration: none; margin: 0 15px; font-size: 18px; font-weight: bold; transition: 0.3s; }
+        nav.menu-superior a:hover { color: #e5b869; }
+        .sup-activo { color: #e5b869 !important; border-bottom: 2px solid #e5b869; padding-bottom: 5px; }
+        .contenedor-principal { display: flex; max-width: 1300px; margin: 40px auto; padding: 0 20px; gap: 40px; }
+        .menu-lateral { width: 250px; background-color: #1a1d24; padding: 25px; border-radius: 10px; border: 1px solid #2a2d34; height: fit-content; }
+        .menu-lateral h3 { color: #e5b869; border-bottom: 1px solid #e5b869; padding-bottom: 10px; margin-top: 0; }
+        .menu-lateral ul { list-style: none; padding: 0; }
+        .menu-lateral li { margin-bottom: 15px; }
+        .menu-lateral a { color: #a0a5ab; text-decoration: none; display: block; transition: 0.3s; }
+        .menu-lateral a:hover { color: white; transform: translateX(8px); }
+        .contenido-derecha { flex: 1; }
+        .seccion-contenedor { margin-bottom: 50px; }
+        .titulo-seccion { color: white; margin-bottom: 20px; font-size: 26px; border-left: 4px solid #e00707; padding-left: 15px; text-transform: uppercase; }
+        .fila-peliculas { display: flex; gap: 20px; flex-wrap: wrap; justify-content: flex-start; }
+        .pelicula-card img { width: 170px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5); border: 1px solid #2a2d34; transition: 0.3s ease; }
+        .pelicula-card img:hover { transform: scale(1.1); border-color: #e00707; }
+
+        .pie-de-pagina { 
+            background-color: #0d0f12; 
+            padding: 50px 20px; 
+            text-align: center; 
+            border-top: 2px solid #e00707; 
+            margin-top: 80px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor-logo-titulo">
+            <img src="img/Imagenes/logo/logo1.jpeg" alt="Logo" class="logo">
+            <h1>LA BUTACA<br>DE TU CASA</h1>
+        </div>
+        <nav class="menu-superior">
+            <a href="index.html">Inicio</a> 
+            <a href="catalogo.html">Catálogo</a> 
+            <a href="#">Ranking</a>
+        </nav>
+    </header>
+    <div class="contenedor-principal">
+        <aside class="menu-lateral">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="peliculas.html" style="color: white; font-weight: bold;">Películas</a></li>
+                <li><a href="series.html">Series</a></li>
+            </ul>
+        </aside>
+        <main class="contenido-derecha">
+            <div class="seccion-contenedor">
+                <h2 class="titulo-seccion">Catálogo de Películas</h2>
+                
+                <div class="fila-peliculas">
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/gladiator.jpg" alt="Gladiator"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/johnwick.jpg" alt="John Wick"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/spiderman.jpg" alt="Spiderman"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/indianajones.jpg" alt="Indiana Jones"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/MaxMax.jpg" alt="Mad Max"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/meverick.jpg" alt="Top Gun Maverick"></div>
+                    
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/cf/interestellar.jpg" alt="Interstellar"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/cf/dune-2021.jpg" alt="Dune"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/cf/matrix.jpg" alt="Matrix"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/cf/wallie.jpg" alt="Wall-E"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/cf/avatar.jpg" alt="Avatar"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/cf/bladerunner.jpg" alt="Blade Runner"></div>
+
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/drama/laballena.jpg" alt="La Ballena"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/drama/lasociedaddelanieve.jpg" alt="La Sociedad de la Nieve"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/drama/forrest.jpg" alt="Forrest Gump"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/drama/parásitos.jpg" alt="Parásitos"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/drama/clublucha.jpg" alt="El Club de la Lucha"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/drama/pulpfiction.jpg" alt="Pulp Fiction"></div>
+                    
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/Toy_Story.jpg" alt="Toy Story"></div>
+                    <div class="pelicula-card"><img src="img/Imagenes/peliculas/accion/zootropolis.jpg" alt="Zootrópolis"></div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="pie-de-pagina">
+        <p style="color: #e5b869; font-size: 22px; margin: 0; font-weight: bold; letter-spacing: 1px;">LA BUTACA DE TU CASA</p>
+        <p style="color: #ffffff; font-size: 15px; margin-top: 10px; opacity: 0.8;">2026 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
